@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@mediapipe/tasks-text": "^0.1.0-alpha-8",
+    "@mediapipe/tasks-vision": "^0.1.0-alpha-8"
+  }
+}
