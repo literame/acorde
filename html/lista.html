@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Contextual</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+.context-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.context-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.context-menu li {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.context-menu li:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div id="content">
+        <p>Haz clic derecho para abrir el menú contextual.</p>
+    </div>
+
+    <div id="context-menu" class="context-menu">
+        <ul>
+            <li><a href="#">Opción 1</a></li>
+            <li><a href="#">Opción 2</a></li>
+            <li><a href="#">Opción 3</a></li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    const content = document.getElementById('content');
+    const contextMenu = document.getElementById('context-menu');
+
+    content.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+
+        const mouseX = e.clientX;
+        const mouseY = e.clientY;
+
+        contextMenu.style.display = 'block';
+        contextMenu.style.left = mouseX + 'px';
+        contextMenu.style.top = mouseY + 'px';
+    });
+
+    document.addEventListener('click', function () {
+        contextMenu.style.display = 'none';
+    });
+});
+
+    </script>
+</body>
+</html>

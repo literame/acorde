@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/vision@0.1/vision.js"
-    crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    
     <title>Archivo</title>
 </head>
 <body>
@@ -28,12 +30,12 @@
     
             </div>
             <div class="cuerdas">
-              <div class="cuerda"></div>
-              <div class="cuerda"></div>
-              <div class="cuerda"></div>
-              <div class="cuerda"></div>
-              <div class="cuerda"></div>
-              <div class="cuerda"></div>
+              <div class="cuerda">a</div>
+              <div class="cuerda">b</div>
+              <div class="cuerda">c</div>
+              <div class="cuerda">d</div>
+              <div class="cuerda">e</div>
+              <div class="cuerda">f</div>
             </div>
             <div class="puntos">
                 <div class="seccion" id="1">
@@ -74,8 +76,42 @@
     </div>
     
 
+    <div id="context-menu" class="context-menu">
+        <ul>
+            <li><a href="#">Opción 1</a></li>
+            <li><a href="#">Opción 2</a></li>
+            <li><a href="#">Opción 3</a></li>
+        </ul>
+    </div>
+
+
     <input type="checkbox" name="notas" id="point">
       
     <script src="./js/index.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const content = document.querySelectorAll('.point');
+            const contextMenu = document.getElementById('context-menu');
+    
+            content.forEach(function (element) {
+                element.addEventListener('contextmenu', function (e) {
+                    e.preventDefault();
+    
+                    const mouseX = e.clientX;
+                    const mouseY = e.clientY;
+    
+                    contextMenu.style.display = 'block';
+                    contextMenu.style.left = mouseX + 'px';
+                    contextMenu.style.top = mouseY + 'px';
+                });
+            });
+    
+            document.addEventListener('click', function () {
+                contextMenu.style.display = 'none';
+            });
+        });
+    </script>
+
 </body>
 </html>

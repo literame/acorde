@@ -1,3 +1,7 @@
+body{
+    background-color: #30363d;
+}
+
 .boxchord{
     display: flex;
     
@@ -7,6 +11,7 @@
     height: 400px;
     padding:0 10px;
     color:  burlywood;
+    background-color: rgb(243, 236, 228);
     font-size: 18px;
     display: flex;
     flex-direction: column;
@@ -95,17 +100,26 @@
     height: 385px;
     margin: 0;
     padding: 0;
-    background: rgba(174, 174, 172,0.75);
+    background: rgba(241, 150, 46, 0.977);
+    color: white;
     
-    
+}
+
+.cuerdas .cuerda:nth-child(1){
+    background: rgb(221, 162, 23);
+
 }
 
 .cuerdas .cuerda:nth-child(5){
     width: 4.1px;
+    background: rgba(145, 141, 135, 0.977);
+
 }
 
 .cuerdas .cuerda:nth-child(6){
     width: 3px;
+    background: rgba(168, 165, 158, 0.977);
+
 }
 
 .puntos{
@@ -129,24 +143,47 @@
     flex-direction: row;
     justify-content: space-around;
 }
+
 .point{
     margin-top: 10px;
     width: 33px;
     height: 33px;
-    
-    border-radius: 50%;
-    
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.point:hover{
+    background-color: #e4e4dd62;
 }
 
 
+/*menu contextual*/
 
+.context-menu {
+    display: none;
+    position: absolute;
+    background-color: #292828;
+    border: 1px solid #3d3b3b;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
 
+.context-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
+.context-menu li {
+    padding: 8px 12px;
+    cursor: pointer;
+}
 
-
-
-
-
+.context-menu li a{
+    text-decoration: none;
+    color: white;
+    font-family: "Kode Mono", monospace;
+}
 
 
 
