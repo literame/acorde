@@ -185,7 +185,9 @@ body{
     font-family: "Kode Mono", monospace;
 }
 
-
+.context-menu li:hover{
+    background-color: #3d3b3b;
+}
 
 
 
