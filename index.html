@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
     
-    <title>Archivo</title>
+    <title>Literame | Acordes</title>
 </head>
 <body>
     <div id="vista" class="boxchord">
@@ -21,7 +21,7 @@
             <p class="num">5</p>
 
         </div>
-        <div class="contenedor">
+        <div id="vistaAcorde" class="contenedor" onmouseover="mouseSobre()">
             <!-- <div class="barra">
                 <p contenteditable="true" title="edita el nombre">wooollss</p>
                 <input type="text" placeholder="wooollss" value="luis">
@@ -46,6 +46,7 @@
             </div>
             <div class="puntos">
                 <div class="seccion" id="1">
+                    <div class="cejillaactiva" id="CA1"></div>
                     <div class="point" id="A1"></div>
                     <div class="point" id="B1"></div>
                     <div class="point" id="C1"></div>
@@ -54,6 +55,7 @@
                     <div class="point" id="F1"></div>
                 </div>
                 <div class="seccion" id="2">
+                    <div class="cejillaactiva" id="CA2"></div>
                     <div class="point" id="A2"></div>
                     <div class="point" id="B2"></div>
                     <div class="point" id="C2"></div>
@@ -62,6 +64,7 @@
                     <div class="point" id="F2"></div>
                 </div>
                 <div class="seccion" id="3">
+                    <div class="cejillaactiva" id="CA3"></div>
                     <div class="point" id="A3"></div>
                     <div class="point" id="B3"></div>
                     <div class="point" id="C3"></div>
@@ -70,6 +73,7 @@
                     <div class="point" id="F3"></div>
                 </div>
                 <div class="seccion" id="4">
+                    <div class="cejillaactiva" id="CA4"></div>
                     <div class="point" id="A4"></div>
                     <div class="point" id="B4"></div>
                     <div class="point" id="C4"></div>
@@ -78,6 +82,7 @@
                     <div class="point" id="F4"></div>
                 </div>
                 <div class="seccion" id="5">
+                    <div class="cejillaactiva" id="CA5"></div>
                     <div class="point" id="A5"></div>
                     <div class="point" id="B5"></div>
                     <div class="point" id="C5"></div>
@@ -87,7 +92,13 @@
                 </div>
             </div>
         </div>
-       
+        <div class="cejillas">
+            <div class="cj">a</div>
+            <div class="cj">b</div>
+            <div class="cj">c</div>
+            <div class="cj">d</div>
+            <div class="cj">e</div>
+        </div>
     </div>
     
 
