@@ -12,22 +12,29 @@
     <title>Archivo</title>
 </head>
 <body>
-    <div class="boxchord">
+    <div id="vista" class="boxchord">
         <div class="numero">
             <p class="num">1</p>
             <p class="num">2</p>
             <p class="num">3</p>
             <p class="num">4</p>
+            <p class="num">5</p>
+
         </div>
         <div class="contenedor">
-            <div class="barra">
-                <p>wooollss</p>
+            <!-- <div class="barra">
+                <p contenteditable="true" title="edita el nombre">wooollss</p>
+                <input type="text" placeholder="wooollss" value="luis">
+            </div> -->
+            <div class="barra editable-paragraph">
+                <div class="barras" contenteditable="true"></div>
             </div>
             <div class="trastes">
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
-    
+                <div class="bar"></div>
+
             </div>
             <div class="cuerdas">
               <div class="cuerda">a</div>
@@ -70,6 +77,14 @@
                     <div class="point" id="E4"></div>
                     <div class="point" id="F4"></div>
                 </div>
+                <div class="seccion" id="5">
+                    <div class="point" id="A5"></div>
+                    <div class="point" id="B5"></div>
+                    <div class="point" id="C5"></div>
+                    <div class="point" id="D5"></div>
+                    <div class="point" id="E5"></div>
+                    <div class="point" id="F5"></div>
+                </div>
             </div>
         </div>
        
@@ -84,34 +99,15 @@
         </ul>
     </div>
 
+<div>
+    <button onclick="convertirYDescargar()">Descargar Imagen</button>
 
-    <input type="checkbox" name="notas" id="point">
+</div>
+
       
     <script src="./js/index.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const content = document.querySelectorAll('.point');
-            const contextMenu = document.getElementById('context-menu');
-    
-            content.forEach(function (element) {
-                element.addEventListener('contextmenu', function (e) {
-                    e.preventDefault();
-    
-                    const mouseX = e.clientX;
-                    const mouseY = e.clientY;
-    
-                    contextMenu.style.display = 'block';
-                    contextMenu.style.left = mouseX + 'px';
-                    contextMenu.style.top = mouseY + 'px';
-                });
-            });
-    
-            document.addEventListener('click', function () {
-                contextMenu.style.display = 'none';
-            });
-        });
-    </script>
 
 </body>
 </html>

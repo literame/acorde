@@ -35,8 +35,10 @@ body{
 
 .barra{
     background: white;
-    height: 15px;
-    
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 8px;
     padding: 0;
     box-sizing: border-box;
@@ -45,18 +47,32 @@ body{
     
 }
 
-.barra p{
+/* .barra p */
+.barras{
     margin: 0;
     background: none;
     text-align: center;
-    /* color: lightgray; */
-    font-size: 12px;
+    font-size: 13px;
     height: 15px;
-    
     -webkit-text-stroke: 1px burlywood;
     color: transparent; 
-    
+    border: none;
+    cursor: text;
+} 
+
+.editable-paragraph {
+    position: relative;
 }
+
+.editable-paragraph div[contenteditable="true"]:empty:before {
+    content: "titulo";
+
+}
+
+.editable-paragraph div[contenteditable="true"]:focus:before {
+    content: "";
+}
+
 
 .trastes{
     /* background: blue; */
@@ -153,6 +169,7 @@ body{
 }
 
 .point:hover{
+
     background-color: #e4e4dd62;
 }
 
@@ -187,6 +204,12 @@ body{
 
 .context-menu li:hover{
     background-color: #3d3b3b;
+}
+
+
+.posicionpunto{
+
+    background-color: #e4e4dd62;
 }
 
 
