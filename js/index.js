@@ -1,24 +1,8 @@
-// if(activo){
-    
-//     element.style.background =  'red';
-
-//     console.log("activo" + " " + element.id);
-//     activo = false;
-
-// }else{
-//     element.style.background =  '#e4e4dd62';
-
-//     console.log(" no activo" + " " + element.id);
-//     activo = true;
-// }
-
-
 document.addEventListener('DOMContentLoaded', function () {
     const content = document.querySelectorAll('.point');
     const contextMenu = document.getElementById('context-menu');
     const cejillas = document.querySelectorAll('.cj');
     const cejillaactiva = document.querySelectorAll('.cejillaactiva');
-
 
     content.forEach(function (element) {
         element.addEventListener('contextmenu', function (e) {
@@ -56,6 +40,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 itmCejilla.style.backgroundColor = 'white';
             }
         })
+
+        
      });
 });
 
@@ -72,30 +58,16 @@ function mouseSobre() {
         }
 
     });
-    // vistaAcorde.addEventListener('mouseout', function (event) {
-    //     itemCejilla.style.backgroundColor = '';
+    vistaAcorde.addEventListener('mouseout', function (event) {
+        itemCejilla.style.backgroundColor = '';
         
     
-    // });
+    });
     });
 }
 
 // Llama a la función cuando se carga el documento
 document.addEventListener('DOMContentLoaded', mouseSobre);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //descargable
 
@@ -119,4 +91,20 @@ document.addEventListener('DOMContentLoaded', mouseSobre);
       document.body.removeChild(enlace);
     });
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
