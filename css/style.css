@@ -187,19 +187,23 @@ body{
     align-items: center;
 } 
 
-.cj{
+.lateralcejilla{
     margin: 0px 8px;
     height: 45px;
     width: 16px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
-
+    cursor: pointer;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
 
 }
 
-.cj:hover{
+.lateralcejilla:hover{
     background-color: #e4e4dd62;
 }
 
@@ -264,7 +268,56 @@ body{
 
 
 
+.descargable{
+    height: 45px;
+    width: 190px;
+    border-radius: 0;
+    
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.descargable:hover {
+    background-color: #45a049;
+  }
+.descargable:active {
+    background-color: #3e8e41;
+  }
 
+.descargable .txtdown{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+.descargable .icon{
+    width: 20%;
+    height: 100%;
+
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: bold;
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.descargable .icon:hover{
+    background: white;
+    color: #1c4936;
+}

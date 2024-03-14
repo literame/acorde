@@ -21,7 +21,7 @@
             <p class="num">5</p>
 
         </div>
-        <div id="vistaAcorde" class="contenedor" onmouseover="mouseSobre()">
+        <div id="vistaAcorde" class="contenedor" onmouseover="mouseSobre()" onmouseout="mousefuera()">
             <!-- <div class="barra">
                 <p contenteditable="true" title="edita el nombre">wooollss</p>
                 <input type="text" placeholder="wooollss" value="luis">
@@ -93,11 +93,11 @@
             </div>
         </div>
         <div class="cejillas">
-            <div class="cj">a</div>
-            <div class="cj">b</div>
-            <div class="cj">c</div>
-            <div class="cj">d</div>
-            <div class="cj">e</div>
+            <div class="lateralcejilla" id="h">h</div>
+            <div class="lateralcejilla" id="j">j</div>
+            <div class="lateralcejilla" id="k">k</div>
+            <div class="lateralcejilla" id="l">l</div>
+            <div class="lateralcejilla" id="ñ">ñ</div>
         </div>
     </div>
     
@@ -110,15 +110,18 @@
         </ul>
     </div>
 
-<div>
-    <button onclick="convertirYDescargar()">Descargar Imagen</button>
 
+<div class="descargable" onclick="convertirYDescargar()">
+    <div class="txtdown">Descargar Imagen</div>
+    <div class="icon">
+        <ion-icon  name="download-outline"></ion-icon>
+    </div>
 </div>
 
-      
-
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
     <script src="./js/index.js"></script>
-
+    <script src="./js/controlmouse.js"></script>
 </body>
 </html>
