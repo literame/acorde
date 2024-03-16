@@ -1,6 +1,4 @@
-body{
-    background-color: #30363d;
-}
+
 
 .boxchord{
     display: flex;
@@ -212,7 +210,6 @@ body{
     align-items: space-evenly;
     justify-content: right;
     position: absolute;
-
     margin-top: 8px 0 ;
     height: 35px;
     width: 98%;

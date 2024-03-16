@@ -1,0 +1,33 @@
+body{
+    background-color: #30363d;
+    margin: 0;
+}
+
+header{
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    background-color: #0a1617;
+}
+
+nav{
+    width: 100vw;
+    height: 50px;
+
+}
+
+#searchitem{
+    width: 60%;
+
+    padding: 5px;
+}
+#searchitem input{
+    width: 40%;
+    height: 30px;
+    border-radius: 4px;
+    padding-left: 8px;
+    border: 1px solid blanchedalmond;
+    background-color: transparent;
+    color: white;
+}
+
