@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruluko&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&family=Ruluko&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styleinicio.css">
+    <link rel="icon" href="./img/lit-32.jpg" type="image/png">
+    <title>Literame | Inicio</title>
+</head>
+<body>
+    <header>
+        <img class="logoicon" src="./img/114427358.jpg" >
+        <a href="#">Literame</a>
+        <a href="#">Nosotros</a>
+
+        <a href="#" class="btntool" onclick="toggleDropdown()">Herramientas
+            <ion-icon class="ion" name="chevron-down-outline"></ion-icon>
+        </a>
+            <div id="wdisplay">
+                <img src="./img/lit-32.jpg" alt="">
+                <a href="">informacion</a>
+            </div>
+        <a href="#" onclick="toggleDropdown()">Proyectos
+            <ion-icon class="ion" name="chevron-down-outline"></ion-icon>
+        </a>
+        <div id="wdisplay">
+            <img src="./img/lit-32.jpg" alt="">
+            <a href="">Acordes</a>
+            <a href="">Password</a>
+
+        </div>
+        <a href="#">Empezar
+            <ion-icon class="ion" name="chevron-forward-outline"></ion-icon>
+        </a>
+    </header>
+    <main>
+    <h1>Soluciones en tecnologia</h1>
+    <ul>
+        <li>
+            <ion-icon class="check" name="checkmark-outline"></ion-icon>
+             Desarrollo Web</li>
+        <li>
+            <ion-icon class="check" name="checkmark-outline"></ion-icon>
+            Base de datos</li>
+        <li>
+            <ion-icon class="check" name="checkmark-outline"></ion-icon>
+            Aplicaciones</li>
+    </ul>
+    <div class="btn-opt">
+        <button> 
+            Ver Mas 
+            <ion-icon class="btnion" name="arrow-forward-outline"></ion-icon>
+        </button>
+    </div>
+</main>
+
+
+
+
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+<script>
+    function toggleDropdown() {
+    var dropdown = document.getElementById("wdisplay");
+    if (dropdown.style.display === "block") {
+        dropdown.style.display = "none";
+    } else {
+        dropdown.style.display = "block";
+    }
+}
+
+</script>
+
+</body>
+</html>
