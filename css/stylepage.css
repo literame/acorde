@@ -49,14 +49,100 @@ nav{
 
 .leftbar{
     width: 70px;
-    background: white;
+    padding: 8px 0;
+border-right: 1px solid #e4e4dd62;
 }
 .leftbar ul{
-    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.leftbar li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 5px;
+    cursor: pointer;
 }
 .leftbar li > a{
     text-decoration: none;
     font-size: 14px;
+    color: white;
+}
+.leftbar li:hover{
+    background: #e4e4dd62;
+}
+
+.logoicon{
+    width: 40px;
+
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.descargable{
+    height: 45px;
+    width: 190px;
+    border-radius: 0;
+    
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.descargable:hover {
+    background-color: #45a049;
+  }
+.descargable:active {
+    background-color: #3e8e41;
+  }
+
+.descargable .txtdown{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+.descargable .icon{
+    width: 20%;
+    height: 100%;
+
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: bold;
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.descargable .icon:hover{
+    background: white;
+    color: #1c4936;
+}
