@@ -125,23 +125,39 @@ main div button:hover{
     display: block;
 }
 
+/* padding: 5px;
+margin: 10px 0; */
+
 .colab_banner{
     width: 100%;
-    padding: 5px;
-    margin: 10px 0;
+
     border-radius: 15px;
-    height: 8em;
+    height: 8.5em;
     color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .colab_banner h2{
     font-family: "Martian Mono", monospace;
     font-size: 14px;
+    padding: 2px;
+    margin: 10px;
+}
+
+.colab_banner div{
+    height: 70%;
+    margin: 4px;
 }
 
 .colab_banner:hover{
     background: #e4e4dd02;
 }
+
+/* .colab_banner ul{
+    display: flex;
+    flex-direction: row;
+} */
 
 .colab_banner li{
     padding: 2px;
@@ -149,12 +165,16 @@ main div button:hover{
     width: 25%;
     height: 50px;
     cursor: pointer;
+    display: flex;
+
+    flex-direction: column;
 }
 
-.colab_banner li img{
+ .colab_banner li img{
     cursor: pointer;
-    min-width: 100px;
-}
+   
+    width: 8em;
+} 
 
 .servicios{
     width: 100%;
