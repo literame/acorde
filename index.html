@@ -77,12 +77,12 @@
 
 <script>
 
-    let wdisplay = document.getElementsByClassName('wdisplay');
+    let wdisplay = document.querySelectorAll('.wdisplay');
 
-    wdisplay.style.display = 'none';
+    // wdisplay.style.display = 'none';
 
     wdisplay.forEach(element => {
-        wdisplay.style.display = 'none';
+        element.style.display = 'none';
     });
 
     function headermouse(){
