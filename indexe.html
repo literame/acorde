@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/lit-32.jpg" type="image/png">
+    <link rel="stylesheet" href="./css/stylepage.css">
+    <link rel="stylesheet" href="./css/styleacorde.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    
+    <title>Literame | Acordes</title>
+</head>
+<body>
+<header>
+
+    <nav>
+        <div id="titulo">
+            <img src="./img/114427358.jpg" >
+        </div>
+        <div id="searchitem">
+            <input type="text" placeholder="Busca el acorde...">
+        </div>
+        <div id="redes">
+
+        </div>
+    </nav>
+
+</header>
+
+
+<main>
+
+
+
+</main>
+
+<div id="content">
+    <!--contenedor principal -->
+    <div class="leftbar">
+        <!-- barra lateral -->
+        <ul>
+            <li><img class="logoicon" src="./img/cabezal.png" alt="">
+                <a href="#">acordes</a></li>
+            <li><img class="logoicon" src="./img/galeria.png" alt="">
+                <a href="">galeria</a></li>
+            <li><img class="logoicon" src="./img/galeria-de-fotos.png" alt="">
+                <a href="">diseño</a></li>
+        </ul>
+    </div>
+    
+    <!-- !diseñador de los acorde -->
+    <div id="diseño">
+    
+        <div id="vista" class="boxchord">
+            <div class="numero">
+                <p class="num">1</p>
+                <p class="num">2</p>
+                <p class="num">3</p>
+                <p class="num">4</p>
+                <p class="num">5</p>
+    
+            </div>
+            <div id="vistaAcorde" class="contenedor" onmouseover="mouseSobre()" onmouseout="mousefuera()">
+                <!-- <div class="barra">
+                    <p contenteditable="true" title="edita el nombre">wooollss</p>
+                    <input type="text" placeholder="wooollss" value="luis">
+                </div> -->
+                <div class="barra editable-paragraph">
+                    <div class="barras" contenteditable="true"></div>
+                </div>
+                <div class="trastes">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+    
+                </div>
+                <div class="cuerdas">
+                  <div class="cuerda">a</div>
+                  <div class="cuerda">b</div>
+                  <div class="cuerda">c</div>
+                  <div class="cuerda">d</div>
+                  <div class="cuerda">e</div>
+                  <div class="cuerda">f</div>
+                </div>
+                <div class="puntos">
+                    <div class="seccion" id="1">
+                        <div class="cejillaactiva" id="CA1"></div>
+                        <div class="point" id="A1"></div>
+                        <div class="point" id="B1"></div>
+                        <div class="point" id="C1"></div>
+                        <div class="point" id="D1"></div>
+                        <div class="point" id="E1"></div>
+                        <div class="point" id="F1"></div>
+                    </div>
+                    <div class="seccion" id="2">
+                        <div class="cejillaactiva" id="CA2"></div>
+                        <div class="point" id="A2"></div>
+                        <div class="point" id="B2"></div>
+                        <div class="point" id="C2"></div>
+                        <div class="point" id="D2"></div>
+                        <div class="point" id="E2"></div>
+                        <div class="point" id="F2"></div>
+                    </div>
+                    <div class="seccion" id="3">
+                        <div class="cejillaactiva" id="CA3"></div>
+                        <div class="point" id="A3"></div>
+                        <div class="point" id="B3"></div>
+                        <div class="point" id="C3"></div>
+                        <div class="point" id="D3"></div>
+                        <div class="point" id="E3"></div>
+                        <div class="point" id="F3"></div>
+                    </div>
+                    <div class="seccion" id="4">
+                        <div class="cejillaactiva" id="CA4"></div>
+                        <div class="point" id="A4"></div>
+                        <div class="point" id="B4"></div>
+                        <div class="point" id="C4"></div>
+                        <div class="point" id="D4"></div>
+                        <div class="point" id="E4"></div>
+                        <div class="point" id="F4"></div>
+                    </div>
+                    <div class="seccion" id="5">
+                        <div class="cejillaactiva" id="CA5"></div>
+                        <div class="point" id="A5"></div>
+                        <div class="point" id="B5"></div>
+                        <div class="point" id="C5"></div>
+                        <div class="point" id="D5"></div>
+                        <div class="point" id="E5"></div>
+                        <div class="point" id="F5"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="cejillas">
+                <div class="lateralcejilla" id="h">h</div>
+                <div class="lateralcejilla" id="j">j</div>
+                <div class="lateralcejilla" id="k">k</div>
+                <div class="lateralcejilla" id="l">l</div>
+                <div class="lateralcejilla" id="ñ">ñ</div>
+            </div>
+        </div>
+        
+    
+        <div id="context-menu" class="context-menu">
+            <ul>
+                <li><a href="#">Opción 1</a></li>
+                <li><a href="#">Opción 2</a></li>
+                <li><a href="#">Opción 3</a></li>
+            </ul>
+        </div>
+    
+    </div>
+
+
+</div>
+
+
+
+
+ 
+
+<!-- <div class="descargable" onclick="convertirYDescargar()">
+    <div class="txtdown">Descargar Imagen</div>
+    <div class="icon">
+        <ion-icon  name="download-outline"></ion-icon>
+    </div>
+</div> -->
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/controlmouse.js"></script>
+</body>
+</html>

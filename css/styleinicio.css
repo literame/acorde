@@ -99,8 +99,8 @@ main div button:hover{
     background: #206ce0;
 }
 
-#wdisplay{
-    display: none;
+/* .wdisplay{
+    display: block;
     position: absolute;
     padding: 8px;
     z-index: 1;
@@ -109,9 +109,9 @@ main div button:hover{
     top: 3em;
     background: #202124;
     border-radius: 10px;
-}
+} */
 
-#wdisplay a{
+.wdisplay a{
     color: white;
     padding: 6px 8px;
     text-decoration: none;
