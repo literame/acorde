@@ -125,7 +125,149 @@ main div button:hover{
     display: block;
 }
 
+.colab_banner{
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+    border-radius: 15px;
+    height: 8em;
+    color: white;
+}
+
+.colab_banner h2{
+    font-family: "Martian Mono", monospace;
+    font-size: 14px;
+}
+
+.colab_banner:hover{
+    background: #e4e4dd02;
+}
+
+.colab_banner li{
+    padding: 2px;
+    border-radius: 6px;
+    width: 25%;
+    height: 50px;
+    cursor: pointer;
+}
+
+.colab_banner li img{
+    cursor: pointer;
+}
+
+.servicios{
+    width: 100%;
+}
+
+.servicios li{
+    width: 20%;
+    margin: 5px;
+    height: 160px;
+}
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para la barra de desplazamiento vertical */
+/* Estilos para navegadores webkit (Safari, Chrome, etc.) */
+::-webkit-scrollbar {
+    width: 12px; /* Ancho de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color del thumb (el botón de arrastre) */
+    border-radius: 6px; /* Bordes redondeados del thumb */
+}
+
+/* Estilos para la barra de desplazamiento horizontal */
+::-webkit-scrollbar-track {
+    background-color: #484646; /* Color del track (la barra de desplazamiento) */
+}
+
+/* Estilos para navegadores Firefox */
+/* Estilos para la barra de desplazamiento vertical */
+/* scrollbar-width: thin;
+scrollbar-color: #888 #f1f1f1; Color del thumb y del track respectivamente */
+
+/* Estilos para la barra de desplazamiento horizontal */
+::-moz-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1; /* Color del thumb y del track respectivamente */
+}
+
+
+
+
+footer{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
