@@ -11,7 +11,8 @@ body{
 }
 
 header{
-    height: 60px;
+    /* height: 60px; */
+    height: 3.75em;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -21,7 +22,9 @@ header img{
     border-radius: 50%;
 }
 .logoicon{
- width: 50px;
+ /* width: 50px; */
+ width: 3.125em;
+
 }
 header a{
     color: hsla(0,0%,100%,.4);
@@ -43,7 +46,8 @@ main ul{
 main li{
     color: hsla(0,0%,100%,.4);
     font-size: 1.2em;
-    margin: 2px 5px;
+    /* margin: 2px 5px;  */
+    margin:  0.125em 0.3125em;
     font-family: "Ruluko", sans-serif;
     display: flex;
     justify-content: center;
@@ -60,11 +64,13 @@ main h1{
 }
 
 .ion{
-    font-size: 12px;
+    /* font-size: 12px; */
+    font-size: 0.75em;
+
 }
 
 .check{
-    margin: 0 2px;
+    margin: 0 0.125em;
 }
 
 .btn-opt{
@@ -76,15 +82,15 @@ main h1{
 }
 
 main div button{
-    height: 50px;
-    min-width: 150px;
-    padding: 5px 4em;
+    height: 3.125em;
+    min-width: 9.375em;
+    padding: 0.3125em 4em;
     border: none;
     margin: 3em auto;
     background: #155fcf;
     color: white;
     font-family: "Martian Mono", monospace;
-    border-radius: 5px;
+    border-radius: 0.3125em;
     cursor: pointer;
     display: flex;
     align-items: center;
