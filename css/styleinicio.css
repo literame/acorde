@@ -153,6 +153,7 @@ main div button:hover{
 
 .colab_banner li img{
     cursor: pointer;
+    min-width: 100px;
 }
 
 .servicios{
