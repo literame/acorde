@@ -99,17 +99,18 @@ main div button:hover{
     background: #206ce0;
 }
 
-/* .wdisplay{
-    display: block;
+.wdisplay{
+    display: none;
     position: absolute;
     padding: 8px;
     z-index: 1;
     width: 300px;
-    height: 100px;
+    /* height: 100px; */
     top: 3em;
+    
     background: #202124;
     border-radius: 10px;
-} */
+}
 
 .wdisplay a{
     color: white;

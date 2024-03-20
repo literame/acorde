@@ -15,7 +15,7 @@
     <header onmouseover="headermouse()" >
         <img class="logoicon" src="./img/114427358.jpg" >
         <a href="#">Literame</a>
-        <a href="#" onclick="toggleDropdown()">Nosotros</a>
+        <a href="#" onmouseover="showWDisplay(this)" onmouseout="hideWDisplay(this)">Nosotros</a>
         <div class="wdisplay" >
             <img src="./img/lit-32.jpg" alt="">
             <a href="">Redes</a>
@@ -81,15 +81,25 @@
 
     // wdisplay.style.display = 'none';
 
-    wdisplay.forEach(element => {
-        element.style.display = 'none';
-    });
+    // wdisplay.forEach(element => {
+    //     element.style.display = 'none';
+    // });
 
-    function headermouse(){
-
+    function showWDisplay(element) {
+        // Encuentra el wdisplay correspondiente al enlace
+        let wdisplay = element.nextElementSibling;
+        
+        // Muestra el wdisplay
+        wdisplay.style.display = 'block';
     }
 
-
+    function hideWDisplay(element) {
+        // Encuentra el wdisplay correspondiente al enlace
+        let wdisplay = element.nextElementSibling;
+        
+        // Oculta el wdisplay
+        wdisplay.style.display = 'none';
+    }
 </script>
 
 </body>
