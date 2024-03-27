@@ -5,25 +5,38 @@ body{
 
 header{
     width: 100vw;
-    height: 85px;
+    height: 90px;
     display: flex;
-    background-color: #0a1617;
-    display: flex;
-    flex-direction: column;
+    /* background-color: #0a1617; */
+    justify-content: center;
+
 }
 
 nav{
-    width: 100vw;
+    /* background: orange; */
+    width: 80vw;
     height: 50%;
-     display: flex;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    padding: 2px;
+    border-radius: 20px;
+    background: #e4e4dd06;
+
 }
+
+/* nav:hover{
+    background: #e4e4dd06;
+} */
 
 #searchitem{
     width: 60%;
-    height: 90%;
-
+    height: 100%;
+    display: flex;
+    align-items: center;
     
 }
+
 #searchitem input{
     width: 40%;
     height: 30px;
@@ -37,11 +50,13 @@ nav{
 #titulo img{
     width: 40px;
     margin: 5px;
+    border-radius: 50%;
 }
 
 /* main{
     padding: ;
 } */
+
 #content{
     display: flex;
     flex-direction: row;
@@ -49,13 +64,24 @@ nav{
 
 .leftbar{
     width: 70px;
-    padding: 8px 0;
-border-right: 1px solid #e4e4dd62;
+    display: flex;
+    justify-content: center;
 }
+
 .leftbar ul{
     margin: 0;
     padding: 0;
+    width: 90%;
+    height: 100%;
+
+    border-radius: 30px;
+    background: #e4e4dd06;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background: orange; */
 }
+
 .leftbar li{
     display: flex;
     flex-direction: column;
@@ -64,17 +90,19 @@ border-right: 1px solid #e4e4dd62;
     padding: 8px 5px;
     cursor: pointer;
 }
+
 .leftbar li > a{
     text-decoration: none;
     font-size: 14px;
     color: white;
 }
+
 .leftbar li:hover{
-    background: #e4e4dd62;
+    background: #e4e4dd32;
 }
 
 .logoicon{
-    width: 40px;
+    width: 30px;
 
 }
 
