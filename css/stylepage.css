@@ -114,7 +114,26 @@ nav{
 
 
 
+.editbox{
+    min-width: 10%;
+    width: 80%;
+    border-bottom: 1px solid #f0f0f018;
+    color: white;
+}
 
+.editbox:hover{
+    border-bottom: 1px solid #f0f0f0;
+    cursor: text;
+}
+
+.editbox input{
+    background: none;
+    border: none;
+}
+
+.editbox input:focus{
+    border: 1 solid transparent;
+}
 
 
 
@@ -175,3 +194,26 @@ nav{
     background: white;
     color: #1c4936;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
