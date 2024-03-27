@@ -64,6 +64,7 @@ nav{
 
 .leftbar{
     width: 70px;
+    padding: 2px;
     display: flex;
     justify-content: center;
 }
