@@ -1,19 +1,21 @@
+
+
+
 body{
     background-color: #30363d;
     margin: 0;
+    margin-top: 10px;
 }
 
 header{
     width: 100vw;
     height: 90px;
     display: flex;
-    /* background-color: #0a1617; */
     justify-content: center;
 
 }
 
 nav{
-    /* background: orange; */
     width: 80vw;
     height: 50%;
     display: flex;
@@ -30,21 +32,35 @@ nav{
 } */
 
 #searchitem{
-    width: 60%;
-    height: 100%;
+    min-width: 10%;
+    width: 80%;
+    border-bottom: 1px solid #f0f0f018;
+    color: white;
     display: flex;
-    align-items: center;
+    align-items: center;   
+}
+
+#searchitem:hover{
+    border-bottom: 1px solid #f0f0f0;
     
+    cursor: text;
 }
 
 #searchitem input{
-    width: 40%;
+    outline: 0;
+    width: 100%;
     height: 30px;
-    border-radius: 4px;
-    padding-left: 8px;
-    border: 1px solid blanchedalmond;
-    background-color: transparent;
-    color: white;
+    padding-left: 5px;
+    background: none;
+    border: none;
+    color: white; 
+}
+
+.isearch{
+    font-size: 28px;
+    color: #cececeb8;
+    /* margin: 10px; */
+    /* background: orange; */
 }
 
 #titulo img{
@@ -53,9 +69,11 @@ nav{
     border-radius: 50%;
 }
 
-/* main{
-    padding: ;
-} */
+main{
+    /* background: #e4e4dd06; */
+    /* border-radius: 15px; */
+    padding: 8px;
+}
 
 #content{
     display: flex;
@@ -80,7 +98,6 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    /* background: orange; */
 }
 
 .leftbar li{
@@ -107,36 +124,57 @@ nav{
 
 }
 
+#diseño{
+    background: #e4e4dd06;
+    border-radius: 20px;
+    width: 85%;
 
+}
 
+.toolscnf{
+    background: #e4e4dd06;
+    border-radius: 20px;
+    width: 5%;
+    margin: 0 8px;
+    padding: 8px;
+    color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.toolscnf div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.toolscnf input{
+    outline: 0;
+    background: none;
+    border: none;
+    border-radius: 25px;
+    width: 2em;
+    height: 2em;
+    border:  1px solid #f0f0f018;
+    font-size: 22px;
+    text-align: center;
+    color: #f0f0f018;
 
+}
 
-
-
-.editbox{
-    min-width: 10%;
-    width: 80%;
-    border-bottom: 1px solid #f0f0f018;
+.toolscnf input[type="text"]:focus {
+    caret-color: white; 
     color: white;
 }
 
-.editbox:hover{
-    border-bottom: 1px solid #f0f0f0;
-    cursor: text;
+.toolscnf input:hover{
+        border: 1px solid #f0f0f0;
+        
 }
 
-.editbox input{
-    background: none;
-    border: none;
+.toolscnf{
+text-align: center;
 }
-
-.editbox input:focus{
-    border: 1 solid transparent;
-}
-
-
-
 
 
 
