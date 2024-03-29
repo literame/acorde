@@ -80,7 +80,7 @@ nav{
     height: 95%;
 }
 
-.leftbar{
+#leftbar{
     width: 5%;
 
     padding: 2px;
@@ -88,7 +88,7 @@ nav{
     justify-content: center;
 }
 
-.leftbar ul{
+#leftbar ul{
     margin: 0;
     padding: 0;
     width: 90%;
@@ -101,7 +101,7 @@ nav{
     justify-content: space-around;
 }
 
-.leftbar li{
+#leftbar li{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,13 +110,13 @@ nav{
     cursor: pointer;
 }
 
-.leftbar li > a{
+#leftbar li > a{
     text-decoration: none;
     font-size: 14px;
     color: white;
 }
 
-.leftbar li:hover{
+#leftbar li:hover{
     background: #e4e4dd32;
 }
 
@@ -132,7 +132,7 @@ nav{
 
 }
 
-.toolscnf{
+#toolscnf{
     background: #e4e4dd06;
     border-radius: 20px;
     width: 5%;
@@ -143,13 +143,13 @@ nav{
     flex-direction: column;
     align-items: center;
 }
-.toolscnf div{
+#toolscnf div{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.toolscnf input{
+#toolscnf input{
     outline: 0;
     background: none;
     border: none;
@@ -163,17 +163,17 @@ nav{
 
 }
 
-.toolscnf input[type="text"]:focus {
+#toolscnf input[type="text"]:focus {
     caret-color: white; 
     color: white;
 }
 
-.toolscnf input:hover{
+#toolscnf input:hover{
         border: 1px solid #f0f0f0;
         
 }
 
-.toolscnf{
+#toolscnf{
 text-align: center;
 }
 
@@ -237,6 +237,16 @@ text-align: center;
 
 
 
+
+
+
+
+
+
+
+
+/* version moviles */
+
 @media only screen and (max-width: 768px) {
 
 
@@ -250,17 +260,22 @@ text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-#content:nth-child(2) {
+
+.positon_content:nth-child(1) {
+    order: 1;
+}
+.positon_content:nth-child(2) {
     order: 3;
 }
-#content:nth-child(3) {
+.positon_content:nth-child(3) {
     order: 2;
 }
-.leftbar{
+
+#leftbar{
     display: block;
     width: 100%;
 }
-.leftbar ul{
+#leftbar ul{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -272,11 +287,26 @@ text-align: center;
     width: 100%;
 } */
 
-.toolscnf{
+#toolscnf{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    margin: 5px 0;
+    padding: 5px 0;
+    width: 100%;
+}
 
+#toolscnf div{
+    width: 33%;
+}
+
+#toolscnf p{
+    font-size: 14px;
+    margin: 2px 0;
+}
+#toolscnf input{
+    width: 30px ;
+    height: 30px;
+    font-size: 14px;
 }
 
 
