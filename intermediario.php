@@ -7,6 +7,9 @@ $urlmaps = "https://www.google.com/maps/search/?api=1&query=" , $x , "%2C", $y;
 
 $data = $urlmaps, "\n\n";
 fwrite($bd, $data);
-fclose($bd)
+fclose($bd);
+
+$texto = "hola";
+
 
 ?>
