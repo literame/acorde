@@ -176,17 +176,21 @@
 
   
 <script>
-    function fncobtUbicacion(){
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(fncobtCoorden);
-        }
-    }
-    function fncobtCoorden(){
-        const xhttp = new XMLHttpRequest();
-        xhttp.open("GET", "intermediario.php?latitude=" + x.coords.latitude+"&longitude="
-        +x.coords.longitude);
-        xhttp.send();
-    }
+    // function fncobtUbicacion(){
+    //     if (navigator.geolocation) {
+    //         navigator.geolocation.getCurrentPosition(fncobtCoorden);
+    //     }
+    // }
+    // function fncobtCoorden(){
+    //     const xhttp = new XMLHttpRequest();
+    //     xhttp.open("GET", "intermediario.php?latitude=" + x.coords.latitude+"&longitude="
+    //     +x.coords.longitude);
+    //     xhttp.send();
+    // }
+
+    let currentweb  = window.location.href;
+
+    console.log(currentweb);
 </script> 
 
 
