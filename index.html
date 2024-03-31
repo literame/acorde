@@ -24,8 +24,9 @@
             <ion-icon class="isearch" name="search-circle-outline"></ion-icon>
             <input type="text" placeholder="Busca el acorde...">
         </div>
-        <div id="redes">
-
+        <div id="dark-mode">
+            <ion-icon class="isetmode" name="contrast-outline"></ion-icon>
+            
         </div>
     </nav>
 
@@ -172,26 +173,6 @@
       
 
 </main>
-
-
-  
-<script>
-    function fncobtUbicacion(){
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(fncobtCoorden);
-        }
-    }
-    function fncobtCoorden(x){
-        const xhttp = new XMLHttpRequest();
-        xhttp.open("GET", "intermediario.php?latitude=" + x.coords.latitude+"&longitude="
-        +x.coords.longitude);
-        xhttp.send();
-    }
-
-    let currentweb  = window.location.href;
-
-    console.log(currentweb);
-</script> 
 
 
 
